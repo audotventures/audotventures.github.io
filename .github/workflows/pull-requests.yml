@@ -1,0 +1,16 @@
+name: pull-requests
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+jobs:
+  build-go:
+    uses: edotau/web-app/.github/workflows/golang.yml@main
+    with:
+      golang: 1.22.2
+  build-node:
+    needs: build-go
+    uses: edotau/web-app/.github/workflows/nodejs.yml@main
+    with:
+      nodejs: '18.x'

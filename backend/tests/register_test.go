@@ -1,21 +1,22 @@
 package tests
 
 // import (
+// 	"backend/db"
 // 	"bytes"
 // 	"database/sql"
 // 	"encoding/json"
 // 	"fmt"
-// 	"github.com/apex/log"
-// 	"github.com/stretchr/testify/suite"
-// 	"goapp/packages/db"
 // 	"io/ioutil"
 // 	"net/http"
 // 	"os"
 // 	"testing"
 // 	"time"
 
-// 	"goapp/packages/api"
-// 	"goapp/packages/config"
+// 	"github.com/apex/log"
+// 	"github.com/stretchr/testify/suite"
+
+// 	"backend/api"
+// 	"backend/config"
 // )
 
 // type registerTestSuite struct {

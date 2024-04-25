@@ -54,7 +54,7 @@
   },
   "author": "edotau et. al.",
   "license": "MIT",
-  "homepage": "/",
+  "homepage": "https://audotventures.github.io/",
   "eslintConfig": {
     "extends": "react-app"
   },

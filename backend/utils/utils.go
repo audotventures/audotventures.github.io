@@ -3,7 +3,7 @@ package utils
 import (
 	"regexp"
 
-	"backend/packages/db"
+	"backend/db"
 
 	"golang.org/x/crypto/bcrypt"
 )

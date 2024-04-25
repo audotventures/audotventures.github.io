@@ -1,0 +1,27 @@
+name: nodejs
+on:
+  workflow_call:
+    inputs:
+      nodejs:
+        type: string
+        required: true
+env:
+  frontend: ./ui
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node.js ${{ inputs.nodejs }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.nodejs }}
+      - name: Install
+        run: yarn install
+        working-directory: ${{ env.frontend }}
+      - name: Build
+        run: yarn build
+        working-directory: ${{ env.frontend }}
