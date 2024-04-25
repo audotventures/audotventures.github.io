@@ -6,11 +6,11 @@ on:
     branches: ["main"]
 jobs:
   build-go:
-    uses: edotau/web-app/.github/workflows/golang.yml@main
+    uses: audotventures/audotventures.github.io/.github/workflows/golang.yml@main
     with:
       golang: 1.22.2
   build-node:
     needs: build-go
-    uses: edotau/web-app/.github/workflows/nodejs.yml@main
+    uses: audotventures/audotventures.github.io/.github/workflows/nodejs.yml@main
     with:
       nodejs: '18.x'

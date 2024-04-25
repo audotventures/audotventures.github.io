@@ -6,7 +6,7 @@ on:
         required: true
         type: string
 env:
-  backend: ./server
+  backend: ./backend
 jobs:
   build:
     strategy:
